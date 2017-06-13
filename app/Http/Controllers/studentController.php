@@ -10,6 +10,8 @@ class studentController extends Controller
 {
     //nc
     public function addStudent(Request $request){
+        //die('here');
+        
         $studentModel=new student();
         
         $qry=$studentModel->create($request->all());
